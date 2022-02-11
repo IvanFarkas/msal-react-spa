@@ -1,9 +1,23 @@
-/*
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License.
- */
+// Tutorial: Sign in users and call the Microsoft Graph API from a React single-page app (SPA) using auth code flow
+//   https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react
+import { LogLevel } from '@azure/msal-browser';
 
-import {LogLevel} from '@azure/msal-browser';
+// https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react
+// The Application (client) ID of the application you registered.
+const appId = process.env.REACT_APP_APP_ID; // Application (client) ID
+
+// The Azure cloud instance in which your application is registered.
+// For the main (or global) Azure cloud: https://login.microsoftonline.com
+const cloudInstanceId = process.env.REACT_APP_CLOUD_INSTANCE_ID; // Cloud_Instance_Id
+
+// If your application supports accounts in any organizational directory and personal Microsoft accounts: common
+const tenantInfo = process.env.REACT_APP_TENANT_INFO; // Tenant_Info
+
+const redirectUri = process.env.REACT_APP_REDIRECT_URI; // Redirect_Uri
+
+// The instance of the Microsoft Graph API the application should communicate with.
+// For the global Microsoft Graph API endpoint: https://graph.microsoft.com. 
+const graphMeEndpoint = process.env.REACT_APP_GRAPH_ME_ENDPOINT; // Graph_Endpoint_1.0
 
 /**
  * Configuration object to be passed to MSAL instance on creation.
@@ -12,9 +26,9 @@ import {LogLevel} from '@azure/msal-browser';
  */
 export const msalConfig = {
   auth: {
-    clientId: '158fe4b7-c403-48da-a93c-b4e67012e15e', // Application (client) ID
-    authority: 'https://login.microsoftonline.com/common/', // Cloud_Instance_Id Tenant_Info
-    redirectUri: 'https://localhost', //Redirect_Uri
+    clientId: appId,
+    authority: `${cloudInstanceId}/${tenantInfo}`,
+    redirectUri: redirectUri,
   },
   cache: {
     cacheLocation: 'sessionStorage', // This configures where your cache will be stored
@@ -60,5 +74,5 @@ export const loginRequest = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 export const graphConfig = {
-  graphMeEndpoint: 'https://graph.microsoft.com/v1.0/me', // Graph_Endpoint_1.0
+  graphMeEndpoint: graphMeEndpoint,
 };
