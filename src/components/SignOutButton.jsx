@@ -8,19 +8,27 @@ import Dropdown from 'react-bootstrap/esm/Dropdown';
  */
 export const SignOutButton = () => {
   const {instance} = useMsal();
-
   const handleLogout = (logoutType) => {
     if (logoutType === 'popup') {
-      instance.logoutPopup({
-        postLogoutRedirectUri: '/',
-        mainWindowRedirectUri: '/',
-      });
+      instance
+        .logoutPopup({
+          postLogoutRedirectUri: '/',
+          mainWindowRedirectUri: '/',
+        })
+        .catch((e) => {
+          console.error(e);
+        });
     } else if (logoutType === 'redirect') {
-      instance.logoutRedirect({
-        postLogoutRedirectUri: '/',
-      });
+      instance
+        .logoutRedirect({
+          postLogoutRedirectUri: '/',
+        })
+        .catch((e) => {
+          console.error(e);
+        });
     }
   };
+
   return (
     <DropdownButton variant="secondary" className="ml-auto" drop="left" title="Sign Out">
       <Dropdown.Item as="button" onClick={() => handleLogout('popup')}>

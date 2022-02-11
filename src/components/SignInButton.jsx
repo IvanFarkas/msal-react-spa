@@ -9,18 +9,18 @@ import Dropdown from 'react-bootstrap/esm/Dropdown';
  */
 export const SignInButton = () => {
   const {instance} = useMsal();
-
   const handleLogin = (loginType) => {
     if (loginType === 'popup') {
       instance.loginPopup(loginRequest).catch((e) => {
-        console.log(e);
+        console.error(e);
       });
     } else if (loginType === 'redirect') {
       instance.loginRedirect(loginRequest).catch((e) => {
-        console.log(e);
+        console.error(e);
       });
     }
   };
+
   return (
     <DropdownButton variant="secondary" className="ml-auto" drop="left" title="Sign In">
       <Dropdown.Item as="button" onClick={() => handleLogin('popup')}>

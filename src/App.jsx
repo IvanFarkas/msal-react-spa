@@ -13,8 +13,7 @@ import './styles/App.css';
 const ProfileContent = () => {
   const {instance, accounts} = useMsal();
   const [graphData, setGraphData] = useState(null);
-
-  function RequestProfileData() {
+  const RequestProfileData = () => {
     // Silently acquires an access token which is then attached to a request for MS Graph data
     instance
       .acquireTokenSilent({
@@ -26,7 +25,7 @@ const ProfileContent = () => {
           setGraphData(response);
         });
       });
-  }
+  };
 
   return (
     <>
