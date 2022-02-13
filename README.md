@@ -58,7 +58,9 @@ REACT_APP_APP_ID="[App Id from above]"
 REACT_APP_CLOUD_INSTANCE_ID="https://login.microsoftonline.com"
 
 # If your application supports accounts in any organizational directory and personal Microsoft accounts: common
-REACT_APP_TENANT_INFO="common"
+# Othetwise use the AAD Tenant Id
+# REACT_APP_TENANT_ID="common"
+REACT_APP_TENANT_ID="[AAD Tenant Id]"
 
 REACT_APP_REDIRECT_URI="http://localhost:3000"
 
@@ -73,7 +75,7 @@ REACT_APP_GRAPH_ME_ENDPOINT="https://graph.microsoft.com/v1.0/me"
    1. Open the local `.env` file.
    2. Set `REACT_APP_APP_ID` value with your app/client ID on AAD Portal.
    3. Set `REACT_APP_CLOUD_INSTANCE_ID` value with `"https://login.microsoftonline.com"` (*note*: This is for multi-tenant applications located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-javascript-auth-code)).
-   4. Set `REACT_APP_TENANT_INFO` value with `"common"` (*note*: This is for multi-tenant applications located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-javascript-auth-code)).
+   4. Set `REACT_APP_TENANT_ID` value with `"common"` (*note*: This is for multi-tenant applications located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-javascript-auth-code)).
    5. Set `"REACT_APP_REDIRECT_URI"` value with `"http://localhost:3000"` the redirect uri you setup on AAD Portal.
 2. Configure the parameters for calling MS Graph API:
    2. Set `REACT_APP_GRAPH_ME_ENDPOINT` value with `"https://graph.microsoft.com/v1.0/me"` (*note*: This is for MS Graph instance located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/en-us/graph/deployments))

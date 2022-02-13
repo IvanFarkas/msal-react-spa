@@ -11,7 +11,9 @@ const appId = process.env.REACT_APP_APP_ID; // Application (client) ID
 const cloudInstanceId = process.env.REACT_APP_CLOUD_INSTANCE_ID; // Cloud_Instance_Id
 
 // If your application supports accounts in any organizational directory and personal Microsoft accounts: common
-const tenantInfo = process.env.REACT_APP_TENANT_INFO; // Tenant_Info
+const tenantId = process.env.REACT_APP_TENANT_ID; // Tenant_Info
+
+const authority = `${cloudInstanceId}${tenantId ? "/" : ""}${tenantId}${tenantId ? "/" : ""}`;
 
 const redirectUri = process.env.REACT_APP_REDIRECT_URI; // Redirect_Uri
 
@@ -27,7 +29,7 @@ const graphMeEndpoint = process.env.REACT_APP_GRAPH_ME_ENDPOINT; // Graph_Endpoi
 export const msalConfig = {
   auth: {
     clientId: appId,
-    authority: `${cloudInstanceId}/${tenantInfo}`,
+    authority: authority,
     redirectUri: redirectUri,
   },
   cache: {
