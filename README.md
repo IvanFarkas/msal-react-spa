@@ -58,7 +58,7 @@ REACT_APP_APP_ID="[App Id from above]"
 REACT_APP_CLOUD_INSTANCE_ID="https://login.microsoftonline.com"
 
 # If your application supports accounts in any organizational directory and personal Microsoft accounts: common
-# Othetwise use the AAD Tenant Id
+# Otherwise use the AAD Tenant Id
 # REACT_APP_TENANT_ID="common"
 REACT_APP_TENANT_ID="[AAD Tenant Id]"
 
