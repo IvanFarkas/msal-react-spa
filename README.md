@@ -46,28 +46,36 @@ This sample demonstrates the following MSAL React concepts:
 1. Open the [/src/authConfig.js](./src/authConfig.js) file and provide the required configuration values.
 1. On the command line, navigate to the root of the repository, and run `npm install` to install the project dependencies via npm.
 
+## Add local .env file
+
+```
+# https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react
+# The Application (client) ID of the application you registered (app/client ID on AAD Portal)
+REACT_APP_APP_ID="[App Id from above]"
+
+# The Azure cloud instance in which your application is registered.
+# For the main (or global) Azure cloud: https://login.microsoftonline.com
+REACT_APP_CLOUD_INSTANCE_ID="https://login.microsoftonline.com"
+
+# If your application supports accounts in any organizational directory and personal Microsoft accounts: common
+REACT_APP_TENANT_INFO="common"
+
+REACT_APP_REDIRECT_URI="http://localhost:3000"
+
+# The instance of the Microsoft Graph API the application should communicate with.
+# For the global Microsoft Graph API endpoint: https://graph.microsoft.com. 
+REACT_APP_GRAPH_ME_ENDPOINT="https://graph.microsoft.com/v1.0/me"
+```
+
 ## Running the sample
 
 1. Configure authentication and authorization parameters:
-   1. Open `src/authConfig.js`
-   2. Replace the string `"Enter_the_Application_Id_Here"` with your app/client ID on AAD Portal.
-   3. Replace the string `"Enter_the_Cloud_Instance_Id_HereEnter_the_Tenant_Info_Here"` with `"https://login.microsoftonline.com/common/"` (*note*: This is for multi-tenant applications located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-javascript-auth-code)).
-   4. Replace the string `"Enter_the_Redirect_Uri_Here"` with the redirect uri you setup on AAD Portal.
+   1. Open the local `.env` file.
+   2. Set `REACT_APP_APP_ID` value with your app/client ID on AAD Portal.
+   3. Set `REACT_APP_CLOUD_INSTANCE_ID` value with `"https://login.microsoftonline.com"` (*note*: This is for multi-tenant applications located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-javascript-auth-code)).
+   4. Set `REACT_APP_TENANT_INFO` value with `"common"` (*note*: This is for multi-tenant applications located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-javascript-auth-code)).
+   5. Set `"REACT_APP_REDIRECT_URI"` value with `"http://localhost:3000"` the redirect uri you setup on AAD Portal.
 2. Configure the parameters for calling MS Graph API:
-   2. Replace the string `"Enter_the_Graph_Endpoint_Herev1.0/me"` with `"https://graph.microsoft.com/v1.0/me"` (*note*: This is for MS Graph instance located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/en-us/graph/deployments))
+   2. Set `REACT_APP_GRAPH_ME_ENDPOINT` value with `"https://graph.microsoft.com/v1.0/me"` (*note*: This is for MS Graph instance located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/en-us/graph/deployments))
 3. To start the sample application, run `npm start`.
 4. Finally, open a browser and navigate to [http://localhost:3000](http://localhost:3000).
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit <https://cla.opensource.microsoft.com>.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
