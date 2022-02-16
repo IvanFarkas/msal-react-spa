@@ -1,8 +1,22 @@
 {
-  "name": "msal-react-quickstart",
+  "name": "msal-react-spa",
   "version": "0.1.0",
   "description": "A React single-page application calling Microsoft Graph API using MSAL.js (w/ AAD v2 endpoint)",
-  "private": true,
+  "author": "Ivan Farkas",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanFarkas/msal-react-spa.git"
+  },
+  "keywords": [
+    "azure-ad",
+    "ms-identity",
+    "node",
+    "api"
+  ],
+  "bugs": {
+    "url": "https://github.com/IvanFarkas/msal-react-spa/issues"
+  },
+  "homepage": "https://github.com/IvanFarkas/msal-react#readme",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
