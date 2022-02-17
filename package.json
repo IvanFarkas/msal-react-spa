@@ -16,12 +16,11 @@
   "bugs": {
     "url": "https://github.com/IvanFarkas/msal-react-spa/issues"
   },
-  "homepage": "https://github.com/IvanFarkas/msal-react#readme",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "fix": "prettier -w \"src/**/*.{js,jsx,ts,tsx}\""
-  },
+    "fix": "prettier -w \"src/**/*.{js,jsx,json,ts,tsx}\""
+    },
   "browserslist": {
     "production": [
       ">0.2%",

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useMsal} from '@azure/msal-react';
+import { useMsal } from '@azure/msal-react';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/esm/Dropdown';
 
@@ -7,7 +7,7 @@ import Dropdown from 'react-bootstrap/esm/Dropdown';
  * Renders a sign-out button
  */
 export const SignOutButton = () => {
-  const {instance} = useMsal();
+  const { instance } = useMsal();
   const handleLogout = (logoutType) => {
     if (logoutType === 'popup') {
       instance

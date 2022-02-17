@@ -13,12 +13,12 @@ const cloudInstanceId = process.env.REACT_APP_CLOUD_INSTANCE_ID; // Cloud_Instan
 // If your application supports accounts in any organizational directory and personal Microsoft accounts: common
 const tenantId = process.env.REACT_APP_TENANT_ID; // Tenant_Info
 
-const authority = `${cloudInstanceId}${tenantId ? "/" : ""}${tenantId}${tenantId ? "/" : ""}`;
+const authority = `${cloudInstanceId}${tenantId ? '/' : ''}${tenantId}${tenantId ? '/' : ''}`;
 
 const redirectUri = process.env.REACT_APP_REDIRECT_URI; // Redirect_Uri
 
 // The instance of the Microsoft Graph API the application should communicate with.
-// For the global Microsoft Graph API endpoint: https://graph.microsoft.com. 
+// For the global Microsoft Graph API endpoint: https://graph.microsoft.com.
 const graphMeEndpoint = process.env.REACT_APP_GRAPH_ME_ENDPOINT; // Graph_Endpoint_1.0
 
 /**
@@ -46,12 +46,15 @@ export const msalConfig = {
           case LogLevel.Error:
             console.error(message);
             return;
+
           case LogLevel.Info:
             console.info(message);
             return;
+
           case LogLevel.Verbose:
             console.debug(message);
             return;
+
           case LogLevel.Warning:
             console.warn(message);
             return;

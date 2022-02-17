@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import {AuthenticatedTemplate, UnauthenticatedTemplate, useMsal} from '@azure/msal-react';
-import {loginRequest} from './authConfig';
-import {PageLayout} from './components/PageLayout';
-import {ProfileData} from './components/ProfileData';
-import {callMsGraph} from './graph';
+import React, { useState } from 'react';
+import { AuthenticatedTemplate, UnauthenticatedTemplate, useMsal } from '@azure/msal-react';
+import { loginRequest } from './authConfig';
+import { PageLayout } from './components/PageLayout';
+import { ProfileData } from './components/ProfileData';
+import { callMsGraph } from './graph';
 import Button from 'react-bootstrap/Button';
 import './styles/App.css';
 
@@ -11,7 +11,7 @@ import './styles/App.css';
  * Renders information about the signed-in user or a button to retrieve data about the user
  */
 const ProfileContent = () => {
-  const {instance, accounts} = useMsal();
+  const { instance, accounts } = useMsal();
   const [graphData, setGraphData] = useState(null);
   const RequestProfileData = () => {
     // Silently acquires an access token which is then attached to a request for MS Graph data
@@ -22,6 +22,7 @@ const ProfileContent = () => {
       })
       .then((response) => {
         callMsGraph(response.accessToken).then((response) => {
+          console.log('response:', response);
           setGraphData(response);
         });
       });
