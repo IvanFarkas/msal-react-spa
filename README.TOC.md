@@ -45,13 +45,13 @@ Alternatively, choose below the sample you want to review.
 
 |                |               |
 |----------------|---------------|
-| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/2-Authorization-I/1-call-graph/ReadmeFiles/topology.png" width="200"> | [**Get an Access Token from Azure AD and call Microsoft Graph**](https://github.com/IvanFarkas/msal-react-spa/README.md) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/2-Authorization-I/1-call-graph/README.md) --> </br> Authenticate your users and acquire an **Access Token** for Microsoft Graph and then call the **Microsoft Graph API**. |
+| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/2-Authorization-I/1-call-graph/ReadmeFiles/topology.png" width="200"> | [**Get an Access Token from Azure AD and call Microsoft Graph**](https://github.com/IvanFarkas/msal-react-spa) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/2-Authorization-I/1-call-graph/README.md) --> </br> Authenticate your users and acquire an **Access Token** for Microsoft Graph and then call the **Microsoft Graph API**. |
 
 ### Chapter 3: Protect an API and call the API from your client app
 
 |                 |               |
 |-----------------|---------------|
-| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/3-Authorization-II/1-call-api/ReadmeFiles/topology.png" width="200"> | [**Protect and call a web API on Azure AD**](https://github.com/IvanFarkas/msal-react-call-api/README.md) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/3-Authorization-II/1-call-api/README.md) --> </br> Protect your web API with the **Azure AD**. Use a client application to sign-in a user, acquire an **Access Token** for your web API and call your protected web API. |
+| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/3-Authorization-II/1-call-api/ReadmeFiles/topology.png" width="200"> | [**Protect and call a web API on Azure AD**](https://github.com/IvanFarkas/msal-react-call-api) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/3-Authorization-II/1-call-api/README.md) --> </br> Protect your web API with the **Azure AD**. Use a client application to sign-in a user, acquire an **Access Token** for your web API and call your protected web API. |
 | <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/3-Authorization-II/2-call-api-b2c/ReadmeFiles/topology.png" width="200"> | [**Protect and call a web API on Azure AD B2C**](https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/3-Authorization-II/2-call-api-b2c/README.md) </br> Protect your web API with **Azure AD B2C**. Use a client application to sign-in a user, acquire an **Access Token** for your web API and call your protected web API. |
 
 ### Chapter 4: Deploy your application to Azure
