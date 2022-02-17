@@ -45,13 +45,13 @@ Alternatively, choose below the sample you want to review.
 
 |                |               |
 |----------------|---------------|
-| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/2-Authorization-I/1-call-graph/ReadmeFiles/topology.png" width="200"> | [**Get an Access Token from Azure AD and call Microsoft Graph**](https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/2-Authorization-I/1-call-graph/README.md) </br> Authenticate your users and acquire an **Access Token** for Microsoft Graph and then call the **Microsoft Graph API**. |
+| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/2-Authorization-I/1-call-graph/ReadmeFiles/topology.png" width="200"> | [**Get an Access Token from Azure AD and call Microsoft Graph**](https://github.com/IvanFarkas/msal-react-spa/README.md) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/2-Authorization-I/1-call-graph/README.md) --> </br> Authenticate your users and acquire an **Access Token** for Microsoft Graph and then call the **Microsoft Graph API**. |
 
 ### Chapter 3: Protect an API and call the API from your client app
 
 |                 |               |
 |-----------------|---------------|
-| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/3-Authorization-II/1-call-api/ReadmeFiles/topology.png" width="200"> | [**Protect and call a web API on Azure AD**](https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/3-Authorization-II/1-call-api/README.md) </br> Protect your web API with the **Azure AD**. Use a client application to sign-in a user, acquire an **Access Token** for your web API and call your protected web API. |
+| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/3-Authorization-II/1-call-api/ReadmeFiles/topology.png" width="200"> | [**Protect and call a web API on Azure AD**](https://github.com/IvanFarkas/msal-react-call-api/README.md) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/3-Authorization-II/1-call-api/README.md) --> </br> Protect your web API with the **Azure AD**. Use a client application to sign-in a user, acquire an **Access Token** for your web API and call your protected web API. |
 | <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/3-Authorization-II/2-call-api-b2c/ReadmeFiles/topology.png" width="200"> | [**Protect and call a web API on Azure AD B2C**](https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/3-Authorization-II/2-call-api-b2c/README.md) </br> Protect your web API with **Azure AD B2C**. Use a client application to sign-in a user, acquire an **Access Token** for your web API and call your protected web API. |
 
 ### Chapter 4: Deploy your application to Azure
@@ -65,8 +65,8 @@ Alternatively, choose below the sample you want to review.
 
 |                 |               |
 |-----------------|---------------|
-| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/5-AccessControl/1-call-api-roles/ReadmeFiles/topology.png" width="200"> | [**Use App Roles for access control**](https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/5-AccessControl/1-call-api-roles/README.md) </br> Define App Roles and use roles claim in a token to implement Role-based Access Control (RBAC) for your SPA and protected web API. |
-| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/5-AccessControl/2-call-api-groups/ReadmeFiles/topology.png" width="200"> | [**Use Security Groups for access control**](/5-AccessControl/2-call-api-groups/README.md) </br> Create Security Groups and use groups claim in a token to implement Role-based Access Control (RBAC) for your SPA and protected web API. Handle overage scenarios.  |
+| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/5-AccessControl/1-call-api-roles/ReadmeFiles/topology.png" width="200"> | [**Use App Roles for access control**](https://github.com/IvanFarkas/msal-react-call-api-roles) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/5-AccessControl/1-call-api-roles/README.md) --> </br> Define App Roles and use roles claim in a token to implement Role-based Access Control (RBAC) for your SPA and protected web API. |
+| <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/5-AccessControl/2-call-api-groups/ReadmeFiles/topology.png" width="200"> | [**Use Security Groups for access control**](https://github.com/IvanFarkas/msal-react-call-api-groups) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/5-AccessControl/2-call-api-groups/README.md) --> </br> Create Security Groups and use groups claim in a token to implement Role-based Access Control (RBAC) for your SPA and protected web API. Handle overage scenarios.  |
 
 ### Chapter 6: Dive into advanced scenarios
 
