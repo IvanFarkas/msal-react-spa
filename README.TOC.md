@@ -1,21 +1,3 @@
----
-page_type: sample
-languages:
-- javascript
-products:
-- msal-react
-- ms-graph
-- azure-storage
-- azure-app-service
-- azure-functions
-- azure-resource-manager
-- azure-app-service-static
-- azure-active-directory
-- azure-active-directory-b2c
-description: "Tutorial: Enable your React single-page application to sign-in users, call the Graph API and deploy on Azure"
-urlFragment: "msal-react-spa"
----
-
 # Tutorial: Enable your React single-page application to sign-in users and call APIs with the Microsoft identity platform
 
 ![npm](https://img.shields.io/npm/v/@azure/msal-browser?label=msal-browser)
