@@ -1,15 +1,4 @@
-<style type="text/css">
-span {background-color: yellow;}
-</style>
-
 # Tutorial: Enable your React single-page application to sign-in users and call APIs with the Microsoft identity platform
-
-<span>Styled Text</span>
-
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
-
 
 ![npm](https://img.shields.io/npm/v/@azure/msal-browser?label=msal-browser)
 ![npm](https://img.shields.io/npm/v/@azure/msal-react?label=msal-react)
