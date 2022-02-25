@@ -33,7 +33,11 @@ export const msalConfig = {
     redirectUri: redirectUri,
   },
   cache: {
-    cacheLocation: 'sessionStorage', // This configures where your cache will be stored
+    // SSO between browser tabs - https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-js-sso#sso-between-browser-tabs
+    // By default, MSAL.js uses "cacheLocation: 'sessionStorage'", which doesn't allow the session to be shared between tabs.
+    // To get SSO between tabs, set the cacheLocation in MSAL.js to "cacheLocation: 'localStorage'".
+    cacheLocation: 'localStorage', // Configures cache location. "sessionStorage" is more secure, but "localStorage" gives you SSO between tabs.
+
     storeAuthStateInCookie: true, // Set this to "true" if you are having issues on IE11 or Edge
   },
   system: {
@@ -80,4 +84,12 @@ export const loginRequest = {
  */
 export const graphConfig = {
   graphMeEndpoint: graphMeEndpoint,
+};
+
+/**
+ * An optional silentRequest object can be used to achieve silent SSO between applications by providing a "login_hint" property.
+ */
+export const silentRequest = {
+  scopes: ["openid", "profile"],
+  loginHint: "example@domain.net"
 };

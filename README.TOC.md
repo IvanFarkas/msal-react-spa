@@ -76,6 +76,10 @@ Alternatively, choose below the sample you want to review.
 | <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/6-AdvancedScenarios/2-call-api-pop/ReadmeFiles/topology.png" width="200"> | <mark>**Updated:**</mark> [**Call a web API using Proof of Possession tokens**](https://github.com/IvanFarkas/msal-react-call-api-pop) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/6-AdvancedScenarios/2-call-api-pop/README.md) --> </br> Acquire proof of possession (PoP) tokens. Learn how to prevent token replay attacks with PoP authentication scheme. Learn how to validate PoP tokens.|
 | <img src="https://raw.githubusercontent.com/Azure-Samples/ms-identity-javascript-react-tutorial/main/6-AdvancedScenarios/3-call-api-acrs/ReadmeFiles/topology.png" width="200"> | <mark>**Updated:**</mark> [**Use Conditional Access Authentication Context**](https://github.com/IvanFarkas/msal-react-call-api-acrs) <!-- (https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/6-AdvancedScenarios/3-call-api-acrs/README.md) --> </br> Enable conditional access for your web API. Use auth context to implement granular access control to resources. Handle claims challenge in client applications. |
 
+### Single sign-on (SSO) with MSAL.js
+Single Sign-On (SSO) enables users to enter their credentials once to sign in and establish a session, which can be reused across multiple applications without requiring to authenticate again. The session provides a seamless experience to the user and reduces the repeated prompts for credentials.
+Read more [**here**](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-js-sso).
+
 ## More information
 
 Learn more about the **Microsoft identity platform**:
